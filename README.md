@@ -21,4 +21,7 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 ## License
 
 [ISC](LICENSE) © 2019 Ivy Liu <ivy.iu@moodys.com>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2e0d69c4e66a69987b78230686c958b09c4d338f
