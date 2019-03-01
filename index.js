@@ -1,15 +1,7 @@
-module.exports = app => {
-  // Your code here
-  app.log('Yay, the app was loaded!')
+const{log, assignIncomment, AddMemberRequest, RemoveMemberRequest} = require('./lib')
 
-  app.on('issues.opened', async context => {
-    const issueComment = context.issue({ body: 'Thanks for opening this issue!' })
-    return context.github.issues.createComment(issueComment)
-  })
-
-  // For more information on building apps:
-  // https://probot.github.io/docs/
-
-  // To get your app running against GitHub, see:
-  // https://probot.github.io/docs/development/
+module.exports = robot =>{
+    log(robot, 'start')
+    robot.on('membership.added', context => AddMemberRequest(robot,context))
+    robot.on('membership.removed', context => RemoveMemberRequest(robot,context))
 }
