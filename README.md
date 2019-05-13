@@ -1,4 +1,4 @@
-# test-app
+# Spec-validator
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that My first app built with Probot 
 
